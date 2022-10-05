@@ -16,11 +16,28 @@
     position: fixed;
 }
 .opacity{
-    background-color: rgb(0, 0, 0, 0.6);
+    background-color: rgb(4, 3, 3, 0.5);
 }
 .w100{
     width: 100%;
 }
+.relative{
+    position: relative;
+}
+.white{
+    color: white;
+}
+.flex-end{
+    display: flex;
+    justify-content: flex-end;
+}
+.padtopbot-30{
+    padding: 30px 0;
+}
+.text-center{
+    text-align: center;
+}
+
 
 /* esercizio */
 
@@ -28,6 +45,14 @@
     height: 100vh;
     background-color: rgb(0, 255, 255);
 }
+
+p{
+    border: 1px solid white;
+    padding: 5px;
+    border-radius: 30px;
+    margin-right: 30px;
+}
+
 
 #main{
     background-color: rgb(176, 210, 210);
@@ -44,6 +69,28 @@
     height: 100%;
     width: 100%;
     background-color: rgb(108, 95, 95);
+    padding-top: 100px;
+}
+.list-row{
+    display: flex;
+    justify-content: center;
+}
+li{
+    list-style: none;
+}
+
+.container-song{
+    display: flex;
+    flex-wrap: nowrap;
+    
+}
+.box-song{
+    width: calc(100% / 6);
+    background-color: blue;
+}
+img{
+    width: 100%;
+    padding: 2px;
 }
 
 #footer{
@@ -52,3 +99,30 @@
 }
 
 /* media query per tablet*/
+@media screen and (max-width: 768px){
+    #nav{
+        padding-right: 20px;
+    }
+    .container-song{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .box-song{
+        width: calc(100% / 4);
+        background-color: blue;
+    }
+}
+
+@media screen and (max-width: 426px){
+    #nav{
+        padding-right: 0px;
+    }
+    .container-song{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .box-song{
+        width: calc(100% / 2);
+        background-color: blue;
+    }
+}
