@@ -24,6 +24,9 @@
 .w100{
     width: 100%;
 }
+.w33{
+    width: calc(100% / 3);
+}
 .relative{
     position: relative;
 }
@@ -40,8 +43,23 @@
 .text-center{
     text-align: center;
 }
+.text-right{
+    text-align: right;
+}
 .h-100{
     height: 100%;
+}
+.pad-right-20{
+    padding-right: 20px;
+}
+.pad-right-40{
+    padding-right: 40px;
+}
+.pad-lef-right-10{
+    padding: 0 10px;
+}
+.pad-lef-10{
+    padding-left: 10px;
 }
 
 
@@ -68,8 +86,11 @@ p{
 
 #nav{
     height: 100%;
-    background-color: red;
-    padding-right: 40px;
+    background-color: rgb(0, 0, 0);
+    padding-right: 50px;
+    color: white;
+    line-height: 25px;
+    /* overflow-y: auto; */
 }
 .list-nav{
     height: 100%;
@@ -79,6 +100,9 @@ p{
 }
 #logo{
     width: 100px;
+}
+.small{
+    width: 13px;
 }
 #content{
     height: 100%;
@@ -90,6 +114,7 @@ p{
 .list-row{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 li{
     list-style: none;
@@ -116,11 +141,20 @@ img{
 #footer{
     background-color: rgb(35, 40, 40);
     height: 10%;
+    color: white;
 }
 .list-foot{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+#sinister{
+    width: 20%;
+}
+.flex-foot{
+    display: flex;
+    align-items: center;
+
 }
 
 /* media query per tablet*/
@@ -135,6 +169,13 @@ img{
     .box-song{
         width: calc(100% / 4);
     }
+    #sinister{
+        width: 25%;
+    }
+    #vw{
+        width: 100%;
+    } 
+    
 }
 /* media query per telefono*/
 @media screen and (max-width: 426px){
@@ -148,10 +189,16 @@ img{
     .box-song{
         width: calc(100% / 2);
     }
-    #logo{
+    .dis-none{
         display: none;
     }
     .list-nav{
         height: 100%;
+    }
+    #vw{
+        width: 100%;
+    } 
+    #sinister{
+        width: 50%;
     }
 }
